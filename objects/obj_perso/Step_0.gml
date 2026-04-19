@@ -1,3 +1,31 @@
+var spd = 4;
+
+#region // Mobile
+if (os_type == os_android || os_type == os_ios) {
+    // está no celular	
+
+var h = 0;
+var v = 0;
+
+if (global.move_left)  h -= 1;
+if (global.move_right) h += 1;
+if (global.move_up)    v -= 1;
+if (global.move_down)  v += 1;
+
+// normalizar diagonal (evita ficar mais rápido)
+if (h != 0 || v != 0) {
+    var len = point_distance(0, 0, h, v);
+    h /= len;
+    v /= len;
+}
+
+x += h * spd;
+y += v * spd;
+
+}
+
+#endregion
+
 var  tecla_cima = keyboard_check(ord("W"));
 var  tecla_baixo = keyboard_check(ord("S"));
 var  tecla_esquerda = keyboard_check(ord("A"));
@@ -131,3 +159,4 @@ if (distance_to_object(obj_par_npcs)) <= 10{
 
 
 #endregion
+
