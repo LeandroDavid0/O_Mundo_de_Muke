@@ -1,0 +1,17 @@
+criar personagens base
+
+planta-olho,
+kaos,
+krael,
+denise,
+toku,
+aiki,
+iko.
+
+cada personagem vai ter uma cor para identificar cada um.
+
+
+!!MUITO IMPORTANTE!!
+
+O RECURSO QUE SE LOCALIZA EM CONFIGURAÇÕES DO WIN PARA CADA JOGO INDIVIDUAL PARA TIRAR O BORRÃO,
+DAS IMAGEM EM PIXEL, SOMENTE DESATIVAR A FUNÇÃO (INTERPOLATE COLOURS BETWEEN PIXELS)
