@@ -9,3 +9,4 @@ draw_rectangle(125, 450, 225, 550, false);
 
 // baixo
 draw_rectangle(125, 550, 225, 650, false);
+

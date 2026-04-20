@@ -1,12 +1,12 @@
 //Checando se o algo existe
 
-if instance_exists(obj_perso){
+if instance_exists(obj_perso_mb){
 	
-	target_ = obj_perso;
+	target_ = obj_perso_mb;
 	
 }
 
-if instance_exists(obj_perso){
+if instance_exists(obj_perso_mb){
 	
 //Seguindo o player
 x = lerp(x, target_.x, 0.1)

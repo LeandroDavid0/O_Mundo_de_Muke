@@ -43,6 +43,7 @@ if inicializar == true{
 			var _opsep = 48;
 			var _opborda = 6;
 			
+			//Selecionar a opcao de dialogo, para cima "W" ou para baixo "S"
 			op_selecionado += keyboard_check_pressed(ord("W")) - keyboard_check_pressed(ord("S"));
 			op_selecionado = clamp(op_selecionado, 0, op_num - 1);
 			
@@ -55,8 +56,8 @@ if inicializar == true{
 					draw_sprite(spr_op_seletor, 0, _xx + 8, _opy - (_opsep * i) + 8);
 				}
 		   }
-		   
-		   if global.tecla{
+		   //Escolher a opcao de dialogo
+		   if global.tecla || mouse_check_button_pressed(mb_left){
 				var _dialogo = instance_create_layer(x, y, "inst_dialogo", obj_dialogo);
 				_dialogo.npc_nome = op_resposta[op_selecionado];
 				
